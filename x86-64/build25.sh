@@ -59,6 +59,13 @@ PACKAGES="$PACKAGES openssh-sftp-server"
 
 # 文件管理器
 PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
+# ===== hark 定制（晓初 J4125 软路由）=====
+PACKAGES="$PACKAGES luci-i18n-base-zh-cn luci-i18n-attendedsysupgrade-zh-cn luci-i18n-ddns-go-zh-cn luci-i18n-samba4-zh-cn luci-i18n-upnp-zh-cn"
+PACKAGES="$PACKAGES docker-compose htop"
+PACKAGES="$PACKAGES kmod-fs-ext4 kmod-fs-vfat kmod-fs-exfat kmod-fs-ntfs3 kmod-fs-btrfs kmod-fs-f2fs"
+PACKAGES="$PACKAGES kmod-usb-storage kmod-usb-storage-uas kmod-usb-storage-extras kmod-nls-utf8 kmod-nls-cp936 kmod-nls-cp437 kmod-nls-iso8859-1"
+PACKAGES="$PACKAGES kmod-nft-tproxy kmod-nft-socket kmod-tun kmod-inet-diag kmod-macvlan kmod-veth kmod-br-netfilter kmod-nft-fullcone"
+PACKAGES="$PACKAGES kmod-drm-i915 i915-firmware-dmc"
 # ======== shell/apk-custom-packages.sh =======
 # 合并imm仓库以外的第三方插件 暂时注释
 PACKAGES="$PACKAGES $CUSTOM_PACKAGES"
